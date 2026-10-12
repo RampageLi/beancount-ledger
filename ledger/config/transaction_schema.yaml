@@ -1,0 +1,7 @@
+cmb_debit_card:
+  - date
+  - currency
+  - amount
+  - balance
+  - transaction_type
+  - counter

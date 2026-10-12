@@ -1,0 +1,20 @@
+2025-11-30 open Assets:CN:Bank:CMB CNY
+
+2020-01-01 open Expenses:Shopping:Online
+2020-01-01 open Expenses:Food:WorkMeals
+2020-01-01 open Expenses:Food:Restaurants
+2020-01-01 open Expenses:Shopping:Groceries
+2020-01-01 open Expenses:Fitness:Climbing
+2020-01-01 open Expenses:Shopping:Clothing
+2020-01-01 open Assets:Transfers:Pending
+2020-01-01 open Expenses:Other
+
+2020-01-01 open Income:Salary
+2020-01-01 open Income:HousingFund
+2020-01-01 open Expenses:Refunds
+2020-01-01 open Income:Other
+
+2020-01-01 open Equity:Opening-Balances
+
+2025-11-30 pad Assets:CN:Bank:CMB Equity:Opening-Balances
+2025-11-30 balance Assets:CN:Bank:CMB +41296.21 CNY

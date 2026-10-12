@@ -1,0 +1,65 @@
+[
+  {
+    "match": {
+      "source": "cmb_debit",
+      "date": "2026-09-28 00:00:00",
+      "signed_amount": "-22000.00",
+      "currency": "CNY",
+      "payee": "陈逸雨",
+      "narration": "转账汇款"
+    },
+    "account": "Expenses:LivingAllowance",
+    "description": "用户确认：每月生活费；本规则仅确认本笔"
+  },
+  {
+    "match": {
+      "source": "cmb_debit",
+      "date": "2026-09-23 00:00:00",
+      "signed_amount": "50.00",
+      "currency": "CNY",
+      "payee": "北京百度网讯科技有限公司",
+      "narration": "代发款项"
+    },
+    "account": "Expenses:Reimbursable",
+    "description": "用户确认：公司报销，冲减报销支出；原垫付支出尚未关联"
+  },
+  {
+    "match": {
+      "source": "alipay",
+      "date": "2026-09-23 16:46:25",
+      "signed_amount": "120.00",
+      "currency": "CNY",
+      "payee": "豪豪",
+      "narration": "收款",
+      "transaction_id": "20260923200040011100120029427940"
+    },
+    "account": "Income:SecondhandSales",
+    "description": "用户确认：闲鱼收入"
+  },
+  {
+    "match": {
+      "source": "wechat",
+      "date": "2026-09-05 10:39:42",
+      "signed_amount": "-1000",
+      "currency": "CNY",
+      "payee": "牛利伟 (牛土豆爱生活)",
+      "narration": "转账备注:新婚快乐",
+      "transaction_id": "53010003454192202609052658727720"
+    },
+    "account": "Expenses:Gifts:Wedding",
+    "description": "用户确认：婚礼随礼"
+  },
+  {
+    "match": {
+      "source": "wechat",
+      "date": "2026-09-13 00:41:41",
+      "signed_amount": "-50",
+      "currency": "CNY",
+      "payee": "发给郑仲帅 (西向)",
+      "narration": "/",
+      "transaction_id": "100003980126091300070131827281036350"
+    },
+    "account": "Expenses:Other",
+    "description": "用户确认：其他用途"
+  }
+]

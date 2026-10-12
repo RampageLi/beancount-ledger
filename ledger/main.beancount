@@ -1,0 +1,26 @@
+option "name_assets" "Assets"
+option "name_liabilities" "Liabilities"
+option "name_equity" "Equity"
+option "name_income" "Income"
+option "name_expenses" "Expenses"
+option "account_previous_balances" "Previous-Balances"
+option "account_previous_earnings" "Previous-Earnings"
+option "account_previous_conversions" "Previous-Conversions"
+option "account_current_earnings" "Current-Earnings"
+option "account_current_conversions" "Current-Conversions"
+option "account_unrealized_gains" "Unrealized-Gains"
+
+option "title" "LRY账本 · 待核对预览"
+option "operating_currency" "CNY"
+option "render_commas" "TRUE"
+
+2000-01-01 custom "fava-option" "language" "zh_CN"
+2000-01-01 custom "fava-option" "auto-reload" "true"
+2000-01-01 custom "fava-option" "default-page" "income_statement/"
+
+; Generated from source statements. Historical accounts.beancount is not included.
+include "output/fava/transactions.beancount"
+
+2000-01-01 query "待核对交易" "SELECT date, payee, narration, account, position WHERE flag = '!'"
+2000-01-01 query "待核对转账" "SELECT date, payee, narration, position WHERE account ~ 'Assets:Transfers:Pending'"
+2000-01-01 query "未匹配信用卡消费" "SELECT date, payee, narration, position WHERE account = 'Expenses:CreditCard:Unmatched'"

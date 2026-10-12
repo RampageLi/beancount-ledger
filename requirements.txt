@@ -1,0 +1,4 @@
+beancount>=3.2,<4
+openpyxl>=3.1,<4
+PyMuPDF>=1.26,<2
+fava>=1.30,<2
